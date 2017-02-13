@@ -2,18 +2,25 @@ import java.time.LocalDate;
 
 public abstract class Vehículos {
 
-	private String Matrícula;
-	private String Chasis;
-	private String Marca;
-	private String Potencia;
-	private String DNI;
-	private LocalDate FechaM;
-	LocalDate itv;
+	protected String Matrícula;
+	protected String Chasis;
+	protected String Marca;
+	protected String Potencia;
+	protected String DNI;
+	protected LocalDate FechaM;
 	
-	public abstract void itv(String rev);
 	
 	public Vehículos(){
 		super();
+	}
+	
+	public void vehículo(String Matrícula, String Chasis, String Marca, String Potencia, String DNI, LocalDate FechaM){
+		this.Matrícula = Matrícula;
+		this.Chasis = Chasis;
+		this.Marca = Marca;
+		this.Potencia = Potencia;
+		this.DNI = DNI;
+		this.FechaM = FechaM;
 	}
 	
 	public String getMatrícula(){
@@ -36,7 +43,7 @@ public abstract class Vehículos {
 		return Marca;
 	}
 	
-	public void setMarac(String marca){
+	public void setMarca(String Marca){
 		this.Marca = Marca;
 	}
 	

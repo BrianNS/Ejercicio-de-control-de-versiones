@@ -2,16 +2,26 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
 
-public abstract  class Turismos extends Vehículos {
+public class Turismos extends Vehículos {
 
-	private String Nºpuertas;
-	private String remolqueOcarga;
-	private String Nºplazas;
-	LocalDate itv;
-	
-	
+	protected String Nºpuertas;
+	protected String remolqueOcarga;
+	protected String Nºplazas;
+		
 	public Turismos(){
 		super();
+	}
+		
+	public Turismos(String Matrícula, String Chasis, String Marca, String Potencia, String DNI, LocalDate FechaM, String Nºpuertas, String remolqueOcarga, String Nºplazas){
+		this.Matrícula = Matrícula;
+		this.Chasis = Chasis;
+		this.Marca = Marca;
+		this.Potencia = Potencia;
+		this.DNI = DNI;
+		this.FechaM = FechaM;
+		this.Nºpuertas = Nºpuertas;
+		this.remolqueOcarga = remolqueOcarga;
+		this.Nºplazas = Nºplazas;
 	}
 	
 	public String getNºpuertas(){
@@ -39,11 +49,8 @@ public abstract  class Turismos extends Vehículos {
 	}
 	
 	public LocalDate itv(){
-		DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-		LocalDate hoy = LocalDate.now();
-		Period periodo = Period.between(super.getFechaM(), hoy);
-		
-		itv = LocalDate.parse(super.getFechaM(), formato);
+
+		LocalDate itv = super.getFechaM();
 		itv = itv.plusYears(5);
 		return itv;
 	}
