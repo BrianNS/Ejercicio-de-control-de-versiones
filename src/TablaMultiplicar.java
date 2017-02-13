@@ -8,6 +8,7 @@ public class TablaMultiplicar {
 		int n;
 		double d;
 		
+		
 		Scanner tec = new Scanner(System.in);
 		
 		//Introduciremos un valor para realizar la multiplicación
