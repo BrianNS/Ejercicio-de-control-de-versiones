@@ -4,6 +4,7 @@ public abstract class formageo {
 	protected String Color;
 	protected String Nombre;
 	
+	
 	public String getColor(){
 		return Color;
 	}

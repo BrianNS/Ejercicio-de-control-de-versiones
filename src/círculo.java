@@ -2,10 +2,13 @@
 public class círculo extends formageo {
 
 	private double radio;
-	private double áreaRadio;
+	private double área;
+	private double perímetro;
+	private String Color;
+	private String Nombre;
 	static final double pi = 3.14;
 	
-	public círculo(String Color, String Nombre, double radio){
+	public círculo(double radio){
 		super();
 		this.Color = Color;
 		this.Nombre = "Círculo";
@@ -19,12 +22,14 @@ public class círculo extends formageo {
 		this.radio = radio;
 	}
 	
-	public double getAreaRadio(){
-		return áreaRadio;
+	public double getArea(){
+		return área;
 	}
 	
-	@Override
 	public double área(){
-		return áreaRadio = pi*radio*radio;
+		return área = pi*radio*radio;
+	}
+	public double perímetro(){
+		return perímetro = 2*pi*radio;
 	}
 }

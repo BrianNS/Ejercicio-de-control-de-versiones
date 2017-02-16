@@ -2,9 +2,11 @@
 public class cuadrado extends formageo {
 
 	private int base;
-	private double áreaCuadrado;
+	private double área;
+	private String Color;
+	private String Nombre;
 	
-	public cuadrado(String Color, String Nombre, int base){
+	public cuadrado(int base){
 		super();
 		this.Color = Color;
 		this.Nombre = "Cuadrado";
@@ -16,14 +18,14 @@ public class cuadrado extends formageo {
 	public void setbase(int base){
 		this.base = base;
 	}
-	public double getAreaCuadrado(){
-		return áreaCuadrado;
+	public double getArea(){
+		return área;
 	}
 	
-	public double area(){
+	public double área(){
 		return (base*base);
 	}
-	public double perimetro(){
+	public double perímetro(){
 		return(4*base);
 	}
 }

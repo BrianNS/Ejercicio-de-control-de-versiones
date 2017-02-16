@@ -1,11 +1,15 @@
 
 public class rectángulo extends formageo {
 
+	private String Color;
+	private String Nombre;
 	private double base;
 	private double altura;
-	private double áreaRectángulo;
+	private double área;
+	private double perímetro;
+	private double ancho, largo;
 	
-	public rectángulo(String Color, String Nombre, double base, double altura){
+	public rectángulo(double base, double altura){
 		super();
 		this.Color = Color;
 		this.Nombre = "Rectángulo";
@@ -26,12 +30,14 @@ public class rectángulo extends formageo {
 		this.altura = altura;
 	}
 	
-	public double getAreaRectángulo(){
-		return áreaRectángulo;
+	public double getArea(){
+		return área;
 	}
 	
-	@Override
 	public double área(){
-		return áreaRectángulo = (base*altura);
+		return área = (base*altura);
+	}
+	public double perímetro(){
+		return perímetro = 2*(ancho+largo);
 	}
 }
