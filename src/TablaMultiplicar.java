@@ -12,7 +12,7 @@ public class TablaMultiplicar {
 		//Introduciremos un valor para realizar la multiplicación
 		System.out.println("Introduce un número: ");
 		n = tec.nextInt();
-		
+		//Comentario para la actividad de GITHUB
 		//Crearemos la tabla y calculamos dependiendo del valor que se le introduzca
 		System.out.println("tabla del "+n);
 		for(int i = 1; i <= 10; i++){
