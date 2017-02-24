@@ -6,13 +6,11 @@ public class TablaMultiplicar {
 		
 		//variable
 		int n;
-		double d;
-		
 		
 		Scanner tec = new Scanner(System.in);
 		
-		//Introduciremos un valor para realizar la multiplicación
-		System.out.println("Introduce un número: ");
+		//Introduciremos un valor para realizar la multiplicaciÃ³n
+		System.out.println("Introduce un nÃºmero: ");
 		n = tec.nextInt();
 		
 		//Crearemos la tabla y calculamos dependiendo del valor que se le introduzca
